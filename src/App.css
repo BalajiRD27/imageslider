@@ -1,0 +1,37 @@
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+
+.image-slider-image{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  transition: translate 500ms ease-in-out ;
+}
+.image-slider-btn{
+  position: absolute;
+  padding: 5px;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.image-slider-btn:hover{
+  background-color: rgb(158, 142, 122);
+  border:none;
+}
+
+.indexbtn{
+  background-color: aquamarine;
+  opacity: .4;
+  border: none;
+  transition: 0.2s ease-out;
+}
+
+.indexbtn:hover{
+  transform: scale(1.1,1.1);
+  opacity: .8;
+}
